@@ -1,10 +1,5 @@
 # Crear un algoritmo, que permita solicitar mínimo 5 registros de  productos de un mercado, con las siguientes características: nombre, valor, tipo producto y cantidad.​
-
-# ​
-
 # Nota: El ejercicio se debe hacer en python, debe tener una función y deben incluir alguno de los elementos (listas, tuplas o diccionarios)
-
-
 
 def create_register(): 
     pedido = [] 
@@ -18,7 +13,6 @@ def create_register():
 
         producto = [nombre,valor,tipoP,cantidad]
 
-        # producto = {"product": {"name": nombre, "value": valor, "typeP": tipoP, "quantity": cantidad}}
         pedido.append(producto)
 
         repeat = input("Quiere añadir un nuevo producto? s/n")
@@ -27,9 +21,7 @@ def create_register():
 
     return pedido
 
-
 crear = input("crear un pedido?")
-
 
 if crear == 's':
     mostrar_pedido = create_register()
